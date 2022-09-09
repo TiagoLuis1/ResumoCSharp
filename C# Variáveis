@@ -1,0 +1,45 @@
+//C# Variáveis
+//Em C#, existem diferentes tipos de variáveis ​​(definidas com diferentes palavras-chave)
+//Ex:
+//armazena inteiros (números inteiros), sem decimais, como 123 ou -123
+{
+ int numero;
+ numero = Convert.ToInt32(textBox1.Text);
+}
+//---------------------------------------------------------------------------------------------------------------------------------
+//Double:
+//armazena números de ponto flutuante, com decimais, como 19,99 ou -19,99
+//Ex
+{
+double a = 1.0;
+decimal b = 2.1m;
+Console.WriteLine(a + (double)b);
+Console.WriteLine((decimal)a + b);
+}
+//---------------------------------------------------------------------------------------------------------------------------------
+//Char:
+//armazena caracteres únicos, como 'a' ou 'B'. Os valores de caractere são cercados por aspas simples
+//Ex:
+var chars = new[]
+{
+    'j',
+    '\u006A',
+    '\x006A',
+    (char)106,
+};
+Console.WriteLine(string.Join(" ", chars));
+//---------------------------------------------------------------------------------------------------------------------------------
+//String:
+//armazena texto, como "Hello World". Os valores de string são cercados por aspas duplas
+//Ex:
+string string1 = " Tenha um bom dia";
+Console.WriteLine(string1);
+//---------------------------------------------------------------------------------------------------------------------------------
+//Bool:
+//armazena valores com dois estados: verdadeiro ou falso
+//Ex:
+bool check = true;
+Console.WriteLine(check ? "Certo");  
+
+Console.WriteLine(false ? "Errado");
+//---------------------------------------------------------------------------------------------------------------------------------
