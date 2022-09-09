@@ -1,0 +1,54 @@
+//Break
+//Você já viu a instrução break usada em um capítulo anterior deste tutorial. Foi usado para "saltar" de uma instrução switch.
+//A instrução break também pode ser usada para sair de um loop.
+//Este exemplo sai do loop quando i é igual a 4
+//Ex:
+for (int i = 0; i < 10; i++) 
+{
+  if (i == 4) 
+  {
+    break;
+  }
+  Console.WriteLine(i);
+}
+//-------------------------------------------------------------------------------------------------------------------------------------------------
+//Continue
+//A instrução continue interrompe uma iteração (no loop), se ocorrer uma condição especificada, e continua com a próxima iteração no loop.
+//Este exemplo ignora o valor de 4
+//Ex:
+for (int i = 0; i < 10; i++) 
+{
+  if (i == 4) 
+  {
+    continue;
+  }
+  Console.WriteLine(i);
+}
+//-------------------------------------------------------------------------------------------------------------------------------------------------
+//Interromper e continuar no loop while
+//Você também pode usar break e continue em loops while:
+//Ex:Break Exemple
+int i = 0;
+while (i < 10) 
+{
+  Console.WriteLine(i);
+  i++;
+  if (i == 4) 
+  {
+    break;
+  }
+}
+//-------------------------------------------------------------------------------------------------------------------------------------------------
+//Ex:Continue Exemple
+//int i = 0;
+while (i < 10) 
+{
+  if (i == 4) 
+  {
+    i++;
+    continue;
+  }
+  Console.WriteLine(i);
+  i++;
+}
+//-------------------------------------------------------------------------------------------------------------------------------------------------
