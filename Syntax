@@ -1,0 +1,82 @@
+//Variáveis C#
+//Principais membros em C#
+
+//Fields:Uma variável que é declada diretamente em uma classe
+//Ex:
+public class CalendarEntry
+{
+    private DateTime _date;
+
+    public DateTime Date
+    {
+        get
+        {
+            return _date;
+        }
+        set
+        {
+            if (value.Year > 1900 && value.Year <= DateTime.Today.Year)
+            {
+                _date = value;
+            }
+            else
+            {
+                throw new ArgumentOutOfRangeException("Data");
+            }
+        }
+    }
+//---------------------------------------------------------------------------------------------------------------------------------
+//Contantes:
+//As constantes são valores imutáveis que são conhecidos no tempo de compilação e não são alterados durante a vida útil do programa
+//Toda constante deve ser iniciada conforme são declaradas
+//Ex:
+class Calendar1
+{
+    public const int Months = 12;
+}
+//Neste exemplo, a constante Months sempre é 12 e não pode ser alterada até mesmo pela própria classe
+//---------------------------------------------------------------------------------------------------------------------------------
+//Operadores:
+//Muitos deles têm suporte pelos tipos internos e permitem que você execute operações básicas com valores desses tipos
+//Exemplos de expressões estão no lado direito das atribuições:
+int a, b, c;
+a = 7;
+b = a;
+c = b++;
+b = a + b * c;
+c = a >= 100 ? b : c / 10;
+a = (int)Math.Sqrt(b * b + c * c);
+
+string s = "String literal";
+char l = s[s.Length - 1];
+
+var numbers = new List<int>(new[] { 1, 2, 3 });
+b = numbers.FindLast(n => n > 1);
+//---------------------------------------------------------------------------------------------------------------------------------
+//Expressões de cadeia de caracteres interpoladas que fornecem sintaxe conveniente para criar cadeias de caracteres formatadas
+var r = 2.3;
+var message = $"The area of a circle with radius {r} is {Math.PI * r * r:F3}.";
+Console.WriteLine(message);
+//---------------------------------------------------------------------------------------------------------------------------------
+//Expressões lambda que permitem criar funções anônimas
+int[] numbers = { 2, 3, 4, 5 };
+var maximumSquare = numbers.Max(x => x * x);
+Console.WriteLine(maximumSquare);
+//---------------------------------------------------------------------------------------------------------------------------------
+//Expressões de consulta que permitem que você use recursos de consulta diretamente em C#
+var scores = new[] { 90, 97, 78, 68, 85 };
+IEnumerable<int> highScoresQuery =
+    from score in scores
+    where score > 80
+    orderby score descending
+    select score;
+Console.WriteLine(string.Join(" ", highScoresQuery));
+//---------------------------------------------------------------------------------------------------------------------------------
+//Use parênteses para alterar a ordem de avaliação imposta pela associação de operador:
+int a = 13 / 5 / 2;
+int b = 13 / (5 / 2);
+Console.WriteLine($"a = {a}, b = {b}");  // output: a = 1, b = 6
+//---------------------------------------------------------------------------------------------------------------------------------
+
+
+
