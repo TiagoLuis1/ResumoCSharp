@@ -1,0 +1,19 @@
+//For...if
+//Quando você sabe exatamente quantas vezes deseja percorrer um bloco de código, use o loop for em vez de um loop while
+//Ex:
+for (statement 1; statement 2; statement 3) 
+{
+  //código executado
+}
+//---------------------------------------------------------------------------------------------------------------------------------
+//Instruçoes:
+//A instrução 1 é executada (uma vez) antes da execução do bloco de código.
+//A instrução 2 define a condição para executar o bloco de código.
+//A instrução 3 é executada (todas as vezes) após a execução do bloco de código.
+//O exemplo abaixo imprimirá os números de 0 a 4
+for (int i = 0; i < 5; i++) 
+{
+  Console.WriteLine(i);
+}
+//---------------------------------------------------------------------------------------------------------------------------------
+
