@@ -1,0 +1,31 @@
+//While
+//Os loops podem executar um bloco de código desde que uma condição especificada seja alcançada
+//Os loops são úteis porque economizam tempo, reduzem erros e tornam o código mais legível
+//No exemplo abaixo, o código no loop será executado repetidamente, desde que uma variável (i) seja menor que 5
+//Ex:
+int i = 0;
+while (i < 5) 
+{
+  Console.WriteLine(i);
+  i++;
+}
+//------------------------------------------------------------------------------------------------------------------------------------------------------------------
+//Comando (Do)
+//Este loop executará o bloco de código uma vez, antes de verificar se a condição é verdadeira, então ele repetirá o loop enquanto a condição for verdadeira
+//Ex:
+do 
+{
+  // code block to be executed
+}
+while (condition);
+//------------------------------------------------------------------------------------------------------------------------------------------------------------------
+//O exemplo abaixo usa um loop do/while. O loop sempre será executado pelo menos uma vez,mesmo sendo falsa pois o bloco é testado antes que a condiçao seja testada
+//Ex:
+int i = 0;
+do 
+{
+  Console.WriteLine(i);
+  i++;
+}
+while (i < 5);
+//------------------------------------------------------------------------------------------------------------------------------------------------------------------
