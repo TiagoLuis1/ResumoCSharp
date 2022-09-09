@@ -1,0 +1,51 @@
+//Switch
+//Use a instrução switch para selecionar um dos muitos blocos de código a serem executados.
+//Ex:
+switch(expression) 
+{
+  case x:
+    // code block
+    break;
+  case y:
+    // code block
+    break;
+  default:
+    // code block
+    break;
+}
+//---------------------------------------------------------------------------------------------------------------------------------
+//A expressão switch é avaliada uma vez
+//O valor da expressão é comparado com os valores de cada caso
+//Se houver uma correspondência, o bloco de código associado é executado
+//As palavras-chave break e default serão descritas mais adiante neste capítulo
+//O exemplo abaixo usa o número do dia da semana para calcular o nome do dia da semana
+//Ex:
+int day = 4;
+switch (day) 
+{
+  case 1:
+    Console.WriteLine("Domingo");
+    break;
+  case 2:
+    Console.WriteLine("Segunda");
+    break;
+  case 3:
+    Console.WriteLine("Terça");
+    break;
+  case 4:
+    Console.WriteLine("Quarta");
+    break;
+  case 5:
+    Console.WriteLine("Quinta");
+    break;
+  case 6:
+    Console.WriteLine("Sábado");
+    break;
+  case 7:
+    Console.WriteLine("Domingo");
+    break;
+}
+//---------------------------------------------------------------------------------------------------------------------------------
+//break
+//Quando o C# atinge uma palavra-chave break, ele sai do bloco switch.
+//---------------------------------------------------------------------------------------------------------------------------------
