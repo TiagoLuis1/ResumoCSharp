@@ -1,0 +1,43 @@
+//Array
+//São usados para armazenar valores em uma única variável,em vex de de declarar variáveis separadas em cada valor
+//Para definir um array devemos usar colchetes ( [] )
+//Ex: 
+string[] cars;
+//---------------------------------------------------------------------------------------------------------------------------------------------------
+//Array com string
+//Para inserir valores nele, podemos usar um literal de array - coloque os valores em uma lista separada por vírgulas, entre chaves
+//Ex:
+string[] cars = {"Volvo", "BMW", "Ford", "Mazda"};
+//---------------------------------------------------------------------------------------------------------------------------------------------------
+//Array com números inteiros 
+//Podemos adicionar "Mynum" para um array de inteiros
+//Ex
+int[] myNum = {10, 20, 30, 40};
+//---------------------------------------------------------------------------------------------------------------------------------------------------
+//Elemntos de um array
+//Você acessa um elemento da matriz referindo-se ao número do índice
+//Ex:
+{
+string[] cars = {"Volvo", "BMW", "Ford", "Mazda"};
+Console.WriteLine(cars[0]);
+}
+//Essa instrução acessa o primeiro elemento em "cars"
+//---------------------------------------------------------------------------------------------------------------------------------------------------
+//Comprimento da matriz
+//Para descobrir quantos elementos um array possui, use a Lengthpropriedade
+//Ex:
+{
+string[] cars = {"Volvo", "BMW", "Ford", "Mazda"};
+Console.WriteLine(cars.Length);
+}
+//---------------------------------------------------------------------------------------------------------------------------------------------------
+//Loop através de uma
+//Você pode percorrer os elementos da matriz com o forloop e usar a Length propriedade para especificar quantas vezes o loop deve ser executado.
+//O exemplo a seguir gera todos os elementos na matriz cars 
+//Ex 
+string[] cars = {"Volvo", "BMW", "Ford", "Mazda"};
+for (int i = 0; i < cars.Length; i++) 
+{
+  Console.WriteLine(cars[i]);
+}
+//---------------------------------------------------------------------------------------------------------------------------------------------------
